@@ -1,6 +1,6 @@
 # `@telegraf/session`
 
-This package provides official storage adapters for Telegraf v4.12+ sessions [[see motivation]](#background).
+This package provides extended storage adapters for Telegraf v4.12+ sessions [[see motivation]](#background).
 
 > ⚠️ Very Important!
 >
@@ -8,15 +8,15 @@ This package provides official storage adapters for Telegraf v4.12+ sessions [[s
 
 An in-memory session module is bundled with Telegraf. The following modules are available here:
 
--   [Redis](#redis)
--   [MongoDB](#mongodb)
--   [SQLite](#sqlite)
--   [PostgreSQL](#postgresql)
--   [MySQL / MariaDB](#mysql--mariadb)
+- [Redis](#redis)
+- [MongoDB](#mongodb)
+- [SQLite](#sqlite)
+- [PostgreSQL](#postgresql)
+- [MySQL / MariaDB](#mysql--mariadb)
 
 ## Redis
 
-Install the official Redis driver alongside this module.
+Install the extended Redis driver alongside this module.
 
 ```shell
 npm i @telegraf/session redis
