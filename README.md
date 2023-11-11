@@ -77,7 +77,7 @@ npm i cntower/session @aws-sdk/client-dynamodb
 Usage is pretty straightforward:
 
 ```TS
-import { Mongo } from "@telegraf/session/dynamodb";
+import { DynamoDB } from "@telegraf/session/dynamodb";
 
 const store = DynamoDB({
 	region: process.env.AWS_DEFAULT_REGEON,
