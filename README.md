@@ -77,15 +77,17 @@ npm i cntower/session @aws-sdk/client-dynamodb
 Usage is pretty straightforward:
 
 ```TS
-import { DynamoDB } from "@telegraf/session/dynamodb";
+import { DynamoDB } from "@cntower/telegraff-session/dynamodb";
 
 const store = DynamoDB({
-	region: process.env.AWS_DEFAULT_REGEON,
-	endpoint: process.env.DOCUMENT_API_ENDPOINT,
-	credentials: {
-	accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-	secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-	},
+  config: {
+    region: process.env.AWS_DEFAULT_REGEON,
+    endpoint: process.env.DOCUMENT_API_ENDPOINT,
+    credentials: {
+      accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+      secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+    },
+  },
 });
 
 const bot = new Telegraf(token, opts);
