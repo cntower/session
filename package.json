@@ -1,5 +1,5 @@
 {
-  "name": "@cntower/session",
+  "name": "@icntower/session",
   "version": "2.0.0-beta.6",
   "description": "Session store adapters for Telegraf",
   "main": "./memory.js",

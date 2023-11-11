@@ -16,8 +16,6 @@ interface NewClientOpts {
    *
    * */
   config: DynamoDBClientConfig;
-  /** The name of the database we want to use. If not provided, database name will be taken from connection string. */
-  database?: string;
   /** DynamoDB table name to use for sessions. Defaults to "telegraf-sessions". */
   table?: string;
   /** Called on fatal connection or setup errors */
@@ -27,8 +25,6 @@ interface NewClientOpts {
 interface ExistingClientOpts {
   /** If passed, we'll reuse this client instead of creating our own. */
   client: DynamoDBClient;
-  /** The name of the database we want to use. If not provided, database name will be taken from connection string. */
-  database?: string;
   /** DynamoDB table name to use for sessions. Defaults to "telegraf-sessions". */
   table?: string;
   /** Called on fatal connection or setup errors */

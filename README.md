@@ -71,13 +71,13 @@ To reuse an existing MongoDB client, use `Mongo({ client })` instead.
 Install the official DynamoDB driver alongside this module.
 
 ```shell
-npm i cntower/session @aws-sdk/client-dynamodb
+npm i @icntower/session @aws-sdk/client-dynamodb
 ```
 
 Usage is pretty straightforward:
 
 ```TS
-import { DynamoDB } from "@cntower/session/dynamodb";
+import { DynamoDB } from "@icntower/session/dynamodb";
 
 const store = DynamoDB({
   config: {
