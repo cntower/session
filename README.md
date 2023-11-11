@@ -77,7 +77,7 @@ npm i cntower/session @aws-sdk/client-dynamodb
 Usage is pretty straightforward:
 
 ```TS
-import { DynamoDB } from "@cntower/telegraff-session/dynamodb";
+import { DynamoDB } from "@cntower/session/dynamodb";
 
 const store = DynamoDB({
   config: {
